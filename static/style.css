@@ -1,0 +1,27 @@
+body { background-color: #121212; color: #f1f1f1; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+.container { max-width: 600px; margin: auto; padding: 20px; background-color: #1e1e1e; border-radius: 10px; box-shadow: 0 0 10px #333; }
+
+h1 { text-align: center; color: #4fc3f7; }
+
+.task-form input, .task-form button { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; font-size: 16px; }
+
+.task-form input { background-color: #2a2a2a; color: #fff; }
+
+.task-form button { background-color: #4caf50; color: white; cursor: pointer; transition: 0.3s; }
+
+.task-form button:hover { background-color: #45a049; }
+
+.task-list { margin-top: 20px; }
+
+.task { background-color: #2b2b2b; margin: 10px 0; padding: 15px; border-left: 5px solid #4fc3f7; border-radius: 5px; position: relative; }
+
+.task h3 { margin: 0; color: #81d4fa; }
+
+.task small { color: #ccc; }
+
+.task .delete { position: absolute; right: 15px; top: 15px; color: #f44336; text-decoration: none; font-size: 18px; }
+
+.clear-btn, .back-btn { display: inline-block; margin-top: 20px; background-color: #f44336; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; transition: 0.3s; }
+
+.clear-btn:hover, .back-btn:hover { background-color: #d32f2f; }
