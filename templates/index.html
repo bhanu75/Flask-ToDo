@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1><form action="/add" method="POST" class="task-form">
+  <input type="text" name="title" placeholder="Task title" required>
+  <input type="text" name="details" placeholder="Task details">
+  <input type="datetime-local" name="deadline">
+  <button type="submit">Add</button>
+</form>
+
+<div class="task-list">
+  {% for task in tasks %}
+    <div class="task">
+      <a href="/task/{{ task.id }}">
+        <h3>{{ task.title }}</h3>
+      </a>
+      <small>Deadline: {{ task.deadline }}</small>
+      <a href="/delete/{{ task.id }}" class="delete">❌</a>
+    </div>
+  {% else %}
+    <p>No tasks yet.</p>
+  {% endfor %}
+</div>
+
+{% if tasks %}
+  <a href="/clear" class="clear-btn">Clear All</a>
+{% endif %}
+
+  </div>
+</body>
+</html>
