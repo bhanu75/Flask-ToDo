@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Details</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>{{ task.title }}</h1>
+    <p><strong>Details:</strong> {{ task.details }}</p>
+    <p><strong>Deadline:</strong> {{ task.deadline }}</p>
+    <p><strong>Created:</strong> {{ task.created }}</p>
+    <a href="/" class="back-btn">← Back</a>
+  </div>
+</body>
+</html>
