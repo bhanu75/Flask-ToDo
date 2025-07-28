@@ -42,7 +42,7 @@ def clear():
 def view(task_id):
     task = next((task for task in TASKS if task['id'] == task_id), None)
     if task:
-        return render_template('detail.html', task=task)
+        return render_template('details.html', task=task)
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
